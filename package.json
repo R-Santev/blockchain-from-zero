@@ -1,0 +1,39 @@
+{
+  "name": "blockchain-from-zero",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "tsc --noEmit && tsx watch ./src/index.ts /ip4/127.0.0.1/tcp/5000 5005",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@chainsafe/libp2p-gossipsub": "^13.1.0",
+    "@chainsafe/libp2p-noise": "^15.1.0",
+    "@libp2p/bootstrap": "^10.1.2",
+    "@libp2p/crypto": "^4.1.6",
+    "@libp2p/identify": "^2.1.2",
+    "@libp2p/mdns": "^10.1.2",
+    "@libp2p/mplex": "^10.1.2",
+    "@libp2p/peer-id": "^4.2.1",
+    "@libp2p/tcp": "^9.1.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "ethers": "^6.13.1",
+    "express": "^4.19.2",
+    "libp2p": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.10",
+    "nodemon": "^3.1.4",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.16.2",
+    "typescript": "^5.5.3"
+  }
+}
