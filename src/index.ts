@@ -1,17 +1,8 @@
 import { configDotenv } from "dotenv";
 
-import * as p2p from "./libp2p";
-import * as jsonrpc from "./jsonrpc";
-import * as consensus from "./consensus";
-
 configDotenv();
 
-const main = async () => {
-  p2p.startServer();
-  jsonrpc.startServer();
-  consensus.startServer();
-  // TODO add syncer service
-};
+const main = async () => {};
 
 main().then().catch(console.error);
 
