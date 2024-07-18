@@ -1,4 +1,4 @@
-import { VALIDATOR_NUMBER } from "./constants/constants";
+import { VALIDATOR_NUMBER } from "./constants";
 import { Block, calcHash } from "./entities/Block";
 import * as blockchain from "./blockchain";
 import * as p2p from "./p2p";

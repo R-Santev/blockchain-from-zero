@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import { PORT } from "./constants/constants";
+import { PORT } from "./constants";
 import { newTransaction } from "./entities/Transaction";
 import * as mempool from "./mempool";
 import * as p2p from "./p2p";

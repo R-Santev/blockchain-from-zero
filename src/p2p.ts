@@ -3,7 +3,7 @@ import {
   BOOTNODE_ONE_ADDRESS,
   BOOTNODE_TWO_ADDRESS,
   P2P_ADDRESS,
-} from "./constants/constants";
+} from "./constants";
 import { tcp } from "@libp2p/tcp";
 import { noise } from "@chainsafe/libp2p-noise";
 import { mplex } from "@libp2p/mplex";

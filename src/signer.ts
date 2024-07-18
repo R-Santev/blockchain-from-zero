@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
-import { PRIVATE_KEY } from "./constants/constants";
+import { PRIVATE_KEY } from "./constants";
 
 const signer = new ethers.Wallet(PRIVATE_KEY);
 
