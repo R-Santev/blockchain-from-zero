@@ -1,8 +1,14 @@
 import { configDotenv } from "dotenv";
-
+import * as p2p from "./p2p";
+import * as jsonrpc from "./jsonrpc";
+import * as consensus from "./consensus";
 configDotenv();
 
-const main = async () => {};
+const main = async () => {
+  await p2p.startServer();
+  jsonrpc.startServer();
+  consensus.startServer();
+};
 
 main().then().catch(console.error);
 

@@ -5,6 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "tsc --noEmit && tsx watch ./src/index.ts /ip4/127.0.0.1/tcp/5000 5005",
+    "tsc": "tsc --noEmit",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "type": "module",
